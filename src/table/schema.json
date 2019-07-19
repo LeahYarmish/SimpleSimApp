@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "table",
+    "title": "create a table schmatic",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "specifies the name of the table component",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What is your name?"
+        }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+}
+
+
